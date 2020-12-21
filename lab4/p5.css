@@ -1,0 +1,42 @@
+#dynamic-toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.view-button {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2em;
+    background-color: #63A4FF;
+    color: white;
+    transition: all 0.4s ease-out;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #63A4FF;
+}
+.view-button:hover{
+    background-color: #ffffff;
+    color: #63A4FF;
+    text-decoration: underline;
+    border-radius: 20px;
+    border: 1px solid #63A4FF;
+}
+@media(max-width:400px){
+    .view-button {
+        width: 60%;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        font-family: monospace;
+        font-size: 2em;
+        background-color: #63A4FF;
+        color: #ffffff;
+        transition: all 0.4s ease-out;
+        text-decoration: none;
+        border-radius: 20px;
+        border: 1px solid #63A4FF;
+    }
+}

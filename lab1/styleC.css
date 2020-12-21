@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(-150deg, #4568DC 14%, #B06AB3 74%);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 5s ease-in-out infinite;
+}
+.container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:  Tahoma, sans-serif;
+  color: aliceblue;
+}
+.box {
+  font-size: 100px;
+  width: 180px;
+  height: 180px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #4ca2cd;
+  text-shadow: 4px 2px white;
+  
+  animation: anim 5s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes anim{
+  0% {
+    opacity: 0.1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  100% {
+    opacity: 0.1;
+    transform: rotate(0deg);
+  }
+}

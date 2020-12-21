@@ -1,0 +1,62 @@
+/*
+CSS for the CS142 project #4 Problem #2 states component
+
+Since CSS uses a global name space for classes we should use names starting with
+cs142-states- here.
+*/
+
+.container {
+   font-family: monospace;
+   transition: all 2s ease-out;
+   color: #9F98E8;
+   border-radius: 20px;
+}
+.container h2,h3{
+   color: #9F98E8;
+   border-radius: 20px;
+}
+
+#list {
+   background-image: linear-gradient(to right, #9F98E8 , #AFF6CF);
+   border-radius: 20px;
+}
+.listItem div{
+   background-color: transparent;
+   transition: all .2s ease-in-out;
+   font-size:14px;
+   font-weight: bold;
+   box-sizing: border-box;
+   border-radius: 20px;
+   color: white;
+}
+.listItem div:hover {
+   color:#83EAF1;
+   cursor: pointer;
+}
+#Input {
+   height: 40px;
+   width: 50%;
+   font-size: 20px;
+   color: #AFF6CF;
+}
+.listItem{
+   box-sizing: border-box;
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap:wrap;
+   padding: 50px;
+   border-radius: 20px;
+   border-radius: 20px;
+}
+@media(max-width:400px){
+   .listItem{
+      box-sizing: border-box;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap:wrap; */
+      padding: 5px;
+      font-size: 8px;
+   }
+}
